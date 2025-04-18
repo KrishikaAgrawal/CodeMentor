@@ -6,7 +6,7 @@ import Markdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/atom-one-dark.css";
 import axios from "axios";
-import jsPDF from "jspdf"; // ✅ Import jsPDF
+import jsPDF from "jspdf"; 
 
 function App() {
   const [code, setCode] = useState(`def sum():\n  return a + b\n`);
@@ -23,13 +23,12 @@ function App() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:3000/ai/get-review/",
+        "https://codementor-reot.onrender.com/ai/get-review/",
         { code }
       );
       setReview(response.data);
     } catch (error) {
       console.error("Error fetching review:", error);
-      setReview("❌ Error while fetching review.");
     } finally {
       setLoading(false);
     }
@@ -46,7 +45,7 @@ function App() {
     }
   }
 
-  // ✅ Download as .md
+ 
   function downloadFile(filename, content) {
     const blob = new Blob([content], { type: "text/markdown" });
     const link = document.createElement("a");
@@ -57,7 +56,7 @@ function App() {
     document.body.removeChild(link);
   }
 
-  // ✅ Download as .pdf
+  
   function downloadPDF(content) {
     const doc = new jsPDF();
     const lines = doc.splitTextToSize(content, 180);
@@ -137,7 +136,7 @@ function App() {
             {review}
           </Markdown>
 
-          {/* ✅ Download Buttons */}
+    
           {review && (
             <div className="flex gap-3 mt-4">
               <button
