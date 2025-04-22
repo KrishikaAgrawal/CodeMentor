@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "jspdf": "^3.0.1"
-  }
-}
