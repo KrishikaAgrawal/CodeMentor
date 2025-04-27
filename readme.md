@@ -7,11 +7,22 @@ Built with ❤️ during a Hackathon.
 
 ## ✨ Features
 
-- 🧠 AI-Powered Code Review
-- 📂 Upload or Write Your Code
-- 🌗 Dark/Light Mode Toggle
-- 🚀 Super Fast Performance (Vite + TailwindCSS)
-- 🖥️ Clean, Responsive, Modern UI
+- 🧠 **AI-Powered Code Review**
+  - Get intelligent suggestions and explanations to improve your code quality.
+- 🧾 **Code Suggestions & Best Practices**
+  - Receive suggestions on better practices, readability, and optimization.
+- 🧪 **Code Complexity Analysis**
+  - Understand the time and space complexity of your functions and algorithms.
+- 🌐 **Cross-Language Translation**
+  - Convert your code to other languages (e.g., Python to JavaScript, Java to Go).
+- 📘 **Learning Resources**
+  - Get relevant links to official documentation, tutorials, and deep dives.
+- 🖨️ **Download Review Reports**
+  - Export code reviews as `.md` or `.pdf` files for documentation or sharing.
+- 📂 **Upload or Write Your Code**
+- 🌗 **Dark/Light Mode Toggle**
+- 🚀 **Super Fast Performance** (Vite + TailwindCSS)
+- 🖥️ **Clean, Responsive, Modern UI**
 
 ---
 
@@ -70,6 +81,15 @@ npm run dev
 Frontend runs on: `http://localhost:5173`
 
 ---
+
+## 📥 Export Options
+
+- Click the **Download** button to export your code review as:
+  - 📄 **Markdown (`.md`)**
+  - 📄 **PDF (`.pdf`)**
+
+---
+
 
 ## 👥 Team Members
 
